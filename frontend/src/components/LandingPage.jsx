@@ -96,7 +96,7 @@ export default function LandingPage() {
                     <section className="py-20 bg-white">
                         <div className="container mx-auto px-6">
                             <div className="text-center mb-16">
-                                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Why Choose Imagina?</h2>
+                                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Why Choose Dream Forge?</h2>
                                 <p className="text-lg text-slate-600 mt-4 max-w-xl mx-auto">Discover the features that make our AI image generator stand out.</p>
                             </div>
                             <div className="grid md:grid-cols-3 gap-8">
@@ -117,7 +117,7 @@ export default function LandingPage() {
                     <section className="py-20 bg-slate-50">
                         <div className="container mx-auto px-6">
                             <div className="text-center mb-16">
-                                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">From Imagination to Reality</h2>
+                                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">From Dream Forge to Reality</h2>
                                 <p className="text-lg text-slate-600 mt-4 max-w-xl mx-auto">See what our community has created with Dream Forge.</p>
                             </div>
                             <div className="columns-2 md:columns-3 lg:columns-4 gap-6 space-y-6">

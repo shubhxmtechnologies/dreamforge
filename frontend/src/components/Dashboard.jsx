@@ -32,7 +32,7 @@ const ImageModal = ({ item, onClose }) => {
         const a = document.createElement('a');
         a.style.display = 'none';
         a.href = url;
-        a.download = `imagina-download.png`;
+        a.download = `dreamforge-download.png`;
         document.body.appendChild(a);
         a.click();
         window.URL.revokeObjectURL(url);
