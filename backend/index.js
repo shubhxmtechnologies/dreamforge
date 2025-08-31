@@ -23,18 +23,24 @@ app.get("/api/v1/getUser", AuthMiddleWare, GetUserDetails)
 
 app.post("/api/v1/generate-image", AuthMiddleWare, generateImages)
 app.get("/api/v1/generations", AuthMiddleWare, getGenerations);
-cron.schedule("0 0 * * *", async () => {
-    try {
 
-        await User.updateMany({}, { $set: { credits: 40 } });
 
-    } catch (err) {
 
-        console.log("❌ Error resetting credits:", err);
-    }
-});
 connectDB().then(() => {
     app.listen(port, () => {
         console.log(`App Is Running...`)
     })
+    cron.schedule("0 0 * * *", async () => {
+        try {
+
+            await User.updateMany({}, { $set: { credits: 40 } });
+
+        } catch (err) {
+
+            console.log("❌ Error resetting credits:", err);
+        }
+    }, {
+        scheduled: true,
+        timezone: "Asia/Kolkata"
+    });
 })
